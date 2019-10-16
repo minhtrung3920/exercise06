@@ -19,7 +19,7 @@ namespace ConsoleApplication1
         }
         public void Withdrawals(int amount)
         {
-            money -= amount;
+             money -= amount;
         }
         public void Deposit(int amount)
         {
@@ -27,7 +27,7 @@ namespace ConsoleApplication1
         }
         public int Balance()
         {
-            return 0;
+            return money;
         }
     }
 }
