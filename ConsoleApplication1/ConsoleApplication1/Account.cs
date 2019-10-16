@@ -12,12 +12,11 @@ namespace ConsoleApplication1
         public Account(int amount)
         {
             money = amount;
-            Console.WriteLine("account");
             Console.WriteLine("Deposit");
-            Console.WriteLine("withdrawal");
+            Console.WriteLine("Withdraw");
             Console.WriteLine("Balance");
         }
-        public void Withdrawals(int amount)
+        public void Withdraw(int amount)
         {
              money -= amount;
         }

@@ -14,6 +14,7 @@ namespace ConsoleApplication1
         {
             Console.WriteLine("Create new Account:");
             int money = Convert.ToInt32(Console.ReadLine());
+
             Account user = new Account(money);
             Console.WriteLine("money: {0}", user.Balance());
             Console.WriteLine("1. Depsosit // 2. Withdraw");
@@ -25,10 +26,23 @@ namespace ConsoleApplication1
                 int inMoney = Convert.ToInt32(Console.ReadLine());
                 user.Deposit(inMoney);
             }
-        }
+
+            else
+            {
+                Console.WriteLine("money withdraw");
+                int outMoney = Convert.ToInt32(Console.ReadLine());
+                user.Withdraw(outMoney);
+            }
+            Console.WriteLine("Money: {0}", user.Balance());
+            }
+            
         static bool userChoose(int choose)
         {
-            return true;
+            if (choose == 1)
+            {
+                return  true;
+            }
+            return false;
         }
     }
     
