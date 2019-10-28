@@ -58,6 +58,10 @@
       <Project>{7196a135-0dd0-4d0e-a277-dd229be2ba71}</Project>
       <Name>ConsoleApplication2</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Stack\Stack.csproj">
+      <Project>{03159ac9-f4bf-4dcc-a813-4fda248a2e8b}</Project>
+      <Name>Stack</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
