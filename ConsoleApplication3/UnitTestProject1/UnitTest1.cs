@@ -14,7 +14,7 @@ namespace UnitTestProject1
             qu.Enqueue(1);
             qu.Enqueue(2);
             qu.Enqueue(3);
-            Assert.AreEqual(3, qu.count());
+            Assert.AreEqual(3, qu.Count());
         }
         [TestMethod]
         public void TestDequeue()
@@ -25,6 +25,7 @@ namespace UnitTestProject1
             qu1.Enqueue(3);
             Assert.AreEqual(2, qu1.Dequeue());
             Assert.AreEqual(3, qu1.Dequeue());
+            Assert.AreEqual(1, qu1.Count());
         }
         [TestMethod]
         public void TestPeek()
@@ -35,7 +36,8 @@ namespace UnitTestProject1
             qu2.Enqueue(3);
             qu2.Enqueue(4);
             Assert.AreEqual(2, qu2.peek());
-            Assert.AreEqual(2, qu2.count());
+            Assert.AreEqual(3, qu2.peek());
+            Assert.AreEqual(4, qu2.Count());
         }
     }
 }

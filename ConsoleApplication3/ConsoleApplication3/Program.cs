@@ -19,8 +19,10 @@ namespace ConsoleApplication3
             q.Enqueue(6);
             Console.Write("Dequeue:");
             Console.WriteLine(q.Dequeue());
+            Console.WriteLine(q.Dequeue());
+            Console.WriteLine(q.peek());
             Console.WriteLine("Count:");
-            Console.WriteLine(q.count());
+            Console.WriteLine(q.Count());
 
         }
     }
